@@ -16,7 +16,6 @@ python main.py
 ```
 
 ## Project Structure
-'''
 log-analyzer/
 ├── src/
 │   ├── models.py       # LogEntry data model
@@ -29,7 +28,6 @@ log-analyzer/
 ├── data/
 │   └── sample.log      # Sample log file
 └── main.py             # Entry point
-'''
 ## Input Format
 YYYY-MM-DD HH:MM:SS STATUS message
 
