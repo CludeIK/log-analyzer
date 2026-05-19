@@ -4,6 +4,7 @@ from src.parser import LogParser
 from src.analyzer import LogAnalyzer
 
 
+
 class TestLogParser(unittest.TestCase):
 
     def setUp(self):
@@ -66,6 +67,7 @@ class TestLogAnalyzer(unittest.TestCase):
 
     def test_total_count(self):
         self.assertEqual(self.analyzer.total_count(), 5)
+
 
 
 if __name__ == "__main__":
