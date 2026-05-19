@@ -1,6 +1,7 @@
 import time
 
 
+
 def timer(func):
     def wrapper(*args, **kwargs):
         start = time.time()
@@ -16,6 +17,7 @@ def get_user_filter():
     print("  Варианты: DEBUG, INFO, WARNING, ERROR, CRITICAL")
     status = input("  Введи статус: ").strip().upper()
     return status if status else None
+
 
 
 def get_date_range():
