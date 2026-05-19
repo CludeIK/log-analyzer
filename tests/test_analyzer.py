@@ -3,8 +3,6 @@ from src.models import LogEntry
 from src.parser import LogParser
 from src.analyzer import LogAnalyzer
 
-
-
 class TestLogParser(unittest.TestCase):
 
     def setUp(self):
@@ -19,7 +17,7 @@ class TestLogParser(unittest.TestCase):
         self.assertEqual(entry.message, "DB failed")
 
     def test_parse_invalid_line(self):
-        entry = self.parser.parse_line("это не лог строка")
+        entry = self.parser.parse_line("this is not a log line")
         self.assertIsNone(entry)
 
     def test_parse_empty_line(self):

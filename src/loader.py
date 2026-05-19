@@ -1,8 +1,4 @@
-from src.models import LogEntry
-
-
 class LogLoader:
-
 
     def __init__(self, filepath):
         self.filepath = filepath
